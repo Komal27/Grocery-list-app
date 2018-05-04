@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>User Grades</title>
+  <meta charset="utf-8">
+
+<link rel="stylesheet" href="stylesheet/style.css">
+<link rel="stylesheet" href="js/bootstrap.min.css">
+<script src="js/coursesforGrades.js" type="text/javascript"></script>
+<script src="js/userGradesInput.js" type="text/javascript"></script>
+<script src="js/server.js" type="text/javascript"></script>
+<script src="js/session.js" type="text/javascript"></script>
+<script src="js/pageDetails.js" type="text/javascript"></script>
+<script src="js/validation.js" type="text/javascript"></script>
+
+</head>
+<body>
+  <p class="grades-title"> GRADE SUBJECTS </p>
+<div id='inputGrades'>
+  <div id="student-desc" class=""></div>
+  <div class="student-sem" >
+    <p> Semester: </p> <p id="student-sem"></p>
+  </div>
+  <div id="student-courses">
+  </div>
+  <div class="submit-btn">
+    <input type="button" value="Submit Grades" id="grade-btn" onclick="submitGrades();"></input>
+      <input type="button" value="Logout" id="logout-btn" onclick="logout();"></input>
+
+  </div>
+</div>
+
+</body>
+
+</html>
+
+<script>
+  getuserDetails();
+  getsubforGrades();
+</script>
